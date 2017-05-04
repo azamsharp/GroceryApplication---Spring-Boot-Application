@@ -1,4 +1,4 @@
-package com.azamsharp.groceryapplication.grocery;
+package com.grocery.data.classes;
 
 import java.util.Arrays;
 import java.util.List;
@@ -21,10 +21,10 @@ public class ShoppingListController {
 		return service.getAll();
 	}
 	
-	@RequestMapping(method=RequestMethod.DELETE, value="/shoppinglists/{title}")
-	public void delete(@PathVariable String title) {
+	@RequestMapping(method=RequestMethod.DELETE, value="/shoppinglists/{id}")
+	public void delete(@PathVariable String id) {
 		
-		ShoppingList shoppingList = service.getBy(title); 
+		ShoppingList shoppingList = service.getById(id); 
 		service.delete(shoppingList);
 	}
 	
@@ -34,9 +34,9 @@ public class ShoppingListController {
 		service.add(shoppingList);
 	}
 	
-	@RequestMapping("/shoppinglists/{title}")
-	public ShoppingList getByTitle(@PathVariable String title) {
-		ShoppingList shoppingList = service.getBy(title);
+	@RequestMapping("/shoppinglists/{id}")
+	public ShoppingList getById(@PathVariable String id) {
+		ShoppingList shoppingList = service.getById(id);
 		return shoppingList; 
 	}
 	

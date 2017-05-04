@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Thu May 04 07:07:12 CDT 2017:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-015b-d35b-6081-00000848cea0 
+on database directory memory:/Users/mohammadazam/Documents/GroceryApplication/grocery-app-data/testdb with class loader sun.misc.Launcher$AppClassLoader@764c12b6 
+Loaded from file:/Users/mohammadazam/.m2/repository/org/apache/derby/derby/10.13.1.1/derby-10.13.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_101-b13
+user.dir=/Users/mohammadazam/Documents/GroceryApplication/grocery-app-data
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.11.6
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
